@@ -1,0 +1,47 @@
+{
+  "name": "code-rewriter",
+  "displayName": "Code Rewriter",
+  "description": "Rewrites and reverts code with keyboard shortcuts",
+  "version": "1.0.0",
+  "publisher": "User",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:code-rewriter.rewriteCode",
+    "onCommand:code-rewriter.revertCode"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-rewriter.rewriteCode",
+        "title": "Rewrite Code from Scratch"
+      },
+      {
+        "command": "code-rewriter.revertCode",
+        "title": "Revert Code to Original"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "code-rewriter.rewriteCode",
+        "key": "ctrl+k",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-rewriter.revertCode",
+        "key": "ctrl+i",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-rewriter.revertCode",
+        "key": "ctrl+o",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
+}
