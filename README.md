@@ -7,13 +7,13 @@
 3. استخدم الأمر التالي لتثبيت الإضافة:
 
 ```powershell
-code --install-extension e:\شغيل html\addition\code-rewriter-1.0.0.vsix
+code --install-extension e:\اكتب اسم الفولدر\addition\code-rewriter-1.0.0.vsix
 ```
 
 أو إذا كنت تواجه مشاكل مع المسار:
 
 ```powershell
-copy "e:\شغيل html\addition\code-rewriter-1.0.0.vsix" "e:\extension.vsix"
+copy "e:\اكتب اسم الفولدر\addition\code-rewriter-1.0.0.vsix" "e:\extension.vsix"
 code --install-extension e:\extension.vsix
 ```
 
@@ -25,5 +25,6 @@ code --install-extension e:\extension.vsix
 ## معلومات المطور
 
 تم تطوير هذه الإضافة بواسطةدكتور نيتروس مطور مصري.
+
 
 آخر تحديث: تم إصلاح مشكلة عدم مسح المحرر عند استخدام `Ctrl+K`.
